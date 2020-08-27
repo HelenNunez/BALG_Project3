@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Web Visualization Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+
+    <!-- This is grouping the "brand" and toggle together for "better display"-->
+    <!--<div class="container-fluid"><div class="navbar-header">
+                <a class="navbar-brand" style="color:#20415b">
+                    <img src="https://portlandgeneral.com/-/media/public/our-company/energy-strategy/images/header-smart-grid-test-bed.jpg?w=1600%27&w=1600%27"
+                        width="30" height="30" class="d-inline-block align-top" alt="">
+                    Testbed Internet
+                </a>
+            </div>-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary navbar-fixed-top-affix-top">
+        <!---or sticky-top-->
+        <!-- fixed-top-->
+        <a class="navbar-brand" href="#"><img src="assets/brand/L.png" height="30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comparisons.html">Comparisons<span class="sr-only">(current)</span></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Visualizations</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="visualizations/temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="visualizations/clouds.html">Cloudiness</a>
+                        <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="This won't help you." aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <main id="border" role="main" class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6 ">
+                <div class="card bg-dark">
+                    <div class="card-header">
+                        <h1>Comparisons</h1>
+                        <p>Click any of the graphs below to view them in a larger size.</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <a href="visualizations/temperature.html"><img src="assets/graphs/Latitude_MaxTemp.png"
+                                        alt="this is an image showing an example plot from the analysis"
+                                        title="Temperature vs Latitude" width="100%">Temperature</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="visualizations/clouds.html"><img src="assets/graphs/Latitude_Cloudiness.png"
+                                        alt="this is an image showing an example plot from the analysis"
+                                        title="Clouds vs Latitude" width="100%" align="">Cloudiness</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a href="visualizations/humidity.html"><img src="assets/graphs/Latitude_Humidity.png"
+                                        alt="this is an image showing an example plot from the analysis"
+                                        title="Humidity vs Latitude" width="100%">Humidity</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="visualizations/wind.html"><img src="assets/graphs/Latitude_WindSpeed.png"
+                                        alt="this is an image showing an example plot from the analysis"
+                                        title="Wind vs Latitude" width="100%" align="">Wind Speed</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main><!-- /.container -->
+    <footer class="footer mt-auto bg-primary text-center">
+        <div class="container">
+            <span class="text-light">Laura Nicholson, 2020</span>
+        </div>
+    </footer>
+
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+    <!-- FONT AWESOME JS-->
+    <script src="assets/js/all.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>
