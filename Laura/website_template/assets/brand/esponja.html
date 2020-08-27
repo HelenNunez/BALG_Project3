@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Presidential Learning Algorithms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div></div>
+    <!--<svg id="esponja" width="750" height="750">-->
+    <svg id=esponja" width="100%" height="750">
+        <!--Get Esponja Centered He needs to shift 25 to the right in the x dir +100 in x and 100 up in the Y-->
+        <rect x="0" y="0" width="750" height="750" rx="10" ry="10" fill="#2d97ca" stroke="black" stroke-width="1.25" />
+
+
+        <!--right side-->
+        <polygon points="475, 290, 525,280, 575, 190, 590, 190, 535, 290, 475, 303" fill="yellow" stroke="black"
+            stroke-width="1.25" />
+        <!--left SLEEVE-->
+        <rect x="473" y="280" width="30" height="25" rx="10" ry="10" fill="white" stroke="black" stroke-width="1.25" />
+        <!--body-->
+        <rect x="275" y="100" width="200" height="350" fill="yellow" stroke="brown" />
+        <!--right leg-->
+        <rect x="283" y="450" width="15" height="190" fill="yellow" stroke="brown" />
+        <!--left leg-->
+        <rect x="385" y="450" width="15" height="190" fill="yellow" stroke="brown" />
+        <!--pantleg-->
+        <rect x="265" y="445" width="50" height="25" fill="brown" stroke="black" />
+        <rect x="370" y="445" width="50" height="25" fill="brown" stroke="black" />
+        <rect x="275" y="350" width="200" height="100" fill="brown" stroke="black" />
+        <rect x="275" y="350" width="200" height="50" fill="white" stroke="brown" />
+        <!--Shoes-->
+        <ellipse cx="302" cy="640" rx="20" ry="10" stroke="brown" fill="black" stroke-width="1" />
+        <ellipse cx="405" cy="640" rx="20" ry="10" stroke="brown" fill="black" stroke-width="1" />
+        <!--eyes-->
+        <circle cx="405" cy="170" r="40" fill="white" stroke="gray" stroke-width="2" />
+        <circle cx="345" cy="170" r="40" fill="white" stroke="gray" stroke-width="2" />
+        <circle cx="410" cy="175" r="12" fill="black" stroke="cyan" stroke-width="7" />
+        <circle cx="350" cy="175" r="12" fill="black" stroke="cyan" stroke-width="7" />
+        <ellipse cx="355" cy="263" rx="35" ry="10" stroke="brown" fill="yellow" stroke-width="1"
+            transform="rotate(-9)" />
+        <!--side pants-->
+        <polygon points="225, 340, 275, 350, 275, 450, 228, 440 " fill="brown" stroke="black" />
+        <polygon points="275, 100, 215, 110, 225, 340, 275, 350" fill="yellow" stroke="brown" />
+        <polygon points="225, 340, 275, 350, 275, 400, 225, 385" fill="white" stroke="brown" />
+        <!--Right arm-->
+        <rect x="220" y="310" width="15" height="150" fill="yellow" stroke="black" />
+        <!--Right sleeve-->
+        <rect x="213" y="308" width="30" height="39" rx="10" ry="10" fill="white" stroke="black" stroke-width="1.25" />
+        <rect x="315" y="250" rx="20" ry="20" fill="darkred" width="100" height="75" stroke="black" />
+        <rect x="313" y="299" rx="15" ry="10" fill="pink" width="70" height="25" />
+        <rect x="313" y="248" rx="20" ry="20" fill="transparent" width="104" height="79" stroke="yellow"
+            stroke-width="5" />
+        <rect x="315" y="250" rx="20" ry="20" fill="transparent" width="100" height="75" stroke="black"
+            stroke-width="1.5" />
+        <rect x="364" y="250" width="23" height="20" fill="white" stroke="black" stroke-width="1.25" />
+        <rect x="398" y="250" width="23" height="20" fill="white" stroke="black" stroke-width="1.25" />
+
+    </svg>
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="assets/js/all.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>
