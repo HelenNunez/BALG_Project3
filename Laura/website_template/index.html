@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Presidential Learning Algorithms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .nav-link-font {
+            color: #edede3;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary navbar-fixed-top-affix-top">
+        <!---or sticky-top-->
+        <!-- fixed-top-->
+        <a class="navbar-brand" href="#"><iframe type="text/html" src="assets/brand/esponja.html"></iframe>
+            <!--<img src="" height="30px"></a>
+            
+            "assets/brand/esponja.svg"
+            -->
+            <img scr="assets/brand/esponja.svg" height="30px" width="30px"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html"></a>
+                </li>
+
+                <!--<li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Analysis</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="visualizations/temperature.html">Model & Analysis</a>
+                        <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
+                            Limitations</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparisons.html">References</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="This won't help you." aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <div class="card bg-success">
+        <h1 class="card-header">Machine Learning with Presidential Candidates</h1>
+    </div>
+    <main id="border" role="main" class="container-fluid">
+        <div class="row" style="min-height:300px;">
+            <div class="col-md-3">
+                <div class="card bg-primary mb-12" style="min-height:200px">
+                    <div class="card-header"></div>
+                    <div class="card-body">We could use a sidebar for our
+                        links instead of a top navbar, if we want.
+                        this is a placeholder for that.
+                        <ul class="navbar-nav">
+                            <!--<ul class="navbar-nav mr-auto">-->
+                            <li class="nav-item active">
+                                <a class="nav-link" id="nav-link-font" href="index.html">Home <span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+
+                                <!--<li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>-->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Analysis</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <a class="dropdown-item" href="visualizations/temperature.html">Model &
+                                        Analysis</a>
+                                    <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
+                                        Limitations</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="comparisons.html">References</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9" id="summary-box">
+
+                <!--<div class="row"></div>-->
+                <div class="col-md-12">
+                    <div class="card bg-dark mb-12">
+                        <h2 class="card-header">About the Project</h2>
+                        <div class="card-body">
+                            <p>
+                                This project is super cool. We did stuff and it turns out that machine learning
+                                takes a
+                                lot of knowledge about what a computer can process or handle in memory. We have
+                                more
+                                neurons that computers have nodes in a neural network, but my working memory
+                                isn't
+                                so
+                                great either!</p>
+                            <p>We used a variety of sources to tackle our main question</p>
+                            <p><i class="fas fa-cat"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-dark">
+                    <h1 class="card-header">Project Contributors</h1>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="assets/brand/aranza.png"
+                                    alt="this is an image showing an example plot from the analysis"
+                                    title="Wind Speed vs Latitude" width="50%" align="right">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Aranza brings a striking organization to the project. She brings a
+                                    background in data journalism to bear upon trying to answer some tough
+                                    questions.
+                                </p>
+                            </div>
+
+                            <div class="col-md-4">
+                                <img src="assets/brand/helen.jpeg"
+                                    alt="this is an image showing an example plot from the analysis"
+                                    title="Humidity vs Latitude" width="50%">
+                            </div>
+                            <div class="col-md-8">
+                                <p>Helen focuses on reaching beyond to showcase skills.</p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="assets/brand/sara.jpg"
+                                    alt="this is an image showing an example plot from the analysis"
+                                    title="Cloudiness vs Latitude" width="50%" align="right">
+                            </div>
+                            <div class="col-md-8">
+                                <p>With a background in Chemistry, Sara's interests in machine learning
+                                    and big data strive towards having better data-informed insights into
+                                    humanity.
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://www.linkedin.com/in/lnicholson-mesm/"><img src="assets/brand/laura.jpg"
+                                        alt="this is an image showing an example plot from the analysis"
+                                        title="Temperature vs Latitude" width="50%"></a>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Laura is lost without a problem to solve. Her focus is on getting data
+                                    <em>right</em> and using it effectively to understand the world and to tell
+                                    stories.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-dark">
+                    <h1 class="card-header">About the model and Analysis</h1>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 bg-success">
+
+                            </div>
+                            <div class="col-md-8 bg-warning">
+                                <p>This will go on a separate page, but not until we have the base format set.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-dark">
+                    <h1 class="card-header"> Limitations & Conclusions</h1>
+                    <div class="card-body">
+                        <div class="row">
+
+                            <div class="col-md-8 bg-info">
+                                <p>This will go on a separate page, but not until we have the base format set.
+                                </p>
+                            </div>
+
+                            <div class="col-md-4 bg-dark">
+                                <img src="assets/brand/helen.jpeg"
+                                    alt="this is an image showing an example plot from the analysis"
+                                    title="Humidity vs Latitude" width="50%">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main><!-- /.container -->
+    <footer class="footer mt-auto bg-primary text-center">
+        <div class="container">
+            <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven Women, 2020</span>
+        </div>
+    </footer>
+
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="assets/js/all.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>

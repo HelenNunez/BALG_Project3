@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Web Visualization Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary navbar-fixed-top-affix-top">
+        <!---or sticky-top-->
+        <!-- fixed-top-->
+        <a class="navbar-brand" href="../index.html"><img src="assets/brand/L.png" height="30px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../data.html">Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../comparisons.html">Comparisons</a>
+                </li>
+                <!--<li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>-->
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Visualizations<span
+                            class="sr-only">(current)</span></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="./temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="./clouds.html">Cloudiness</a>
+                        <a class="dropdown-item" href="./humidity.html">Humidity</a>
+                        <a class="dropdown-item disabled" href="./wind.html" aria-disabled="true">Wind Speed</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="This won't help you." aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <main id="border" role="main" class="container-fluid">
+        <div class="row" style="min-height:400px;">
+            <div class="col-md-8" id="summary-box">
+                <!--<div class="row"></div>-->
+                <div class="col-md-12">
+                    <div class="card bg-dark mb-12 align-items-center">
+                        <h1 class="card-header">Latitude and Wind Speeds</h1>
+                        <div class="card-body justify-content-center">
+                            <img class="mr-4" src="../assets/graphs/Latitude_WindSpeed.png"
+                                alt="Image of Max Temperature vs Latitude" align="center" width="97%"></div>
+                        <div class="card-body">
+                            <p>Wind speeds appear chaotic without
+                                very recognizable patterns. They appear clustered near low values, but this could be due
+                                to the one outlier squashing the rest of the data together visually.</p>
+                            <p>At a 95% confidence level, wind speeds in the Northern Hemisphere yielded statistically
+                                significant results, showing a moderate correlation with higher wind speeds at higher
+                                latitudes; this may be worth examining with the outlier removed, as the variation in
+                                speeds are within 3 m/s.</p>
+                            <p> <i class="fas fa-cat"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-dark">
+                    <h2 class="card-header">Plots</h2>
+                    <div class="card-body">
+                        <a href="./temperature.html"><img src="../assets/graphs/Latitude_MaxTemp.png"
+                                alt="Image of Max Temperature vs Latitude" title="Temperature vs Latitude"
+                                width="100%"></a><br><br>
+                        <a href="./clouds.html"><img src="../assets/graphs/Latitude_Cloudiness.png"
+                                alt="Image of Cloudiness vs Latitude" title="Cloudiness vs Latitude" width="100%"
+                                align=""><br><br>
+                            <a href="./humidity.html"><img src="../assets/graphs/Latitude_Humidity.png"
+                                    alt="Image of Humidity vs Latitude" title="Humidity vs Latitude" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        </div>
+    </main><!-- /.container -->
+    <footer class="footer mt-auto bg-primary text-center">
+        <div class="container">
+            <span class="text-light">Laura Nicholson, 2020</span>
+        </div>
+    </footer>
+
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+    <!-- FONT AWESOME JS-->
+    <script src="../assets/js/all.js"></script>
+    <!-- BOOTSTRAP JS-->
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>
