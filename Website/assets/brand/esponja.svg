@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="750px" height="750px" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="750" height="750" rx="10" ry="10" fill="#2d97ca" stroke="black" stroke-width="1.25" />
+<svg width="750px" height="750px" xmlns="http://www.w3.org/2000/svg" >
+<rect x="0" y="0" width="750" height="750" rx="10" ry="10" fill="#2d97ca" stroke="black" stroke-width="1.25" /><!--"#2d97ca"-->
 <polygon points="475, 290, 525,280, 575, 190, 590, 190, 535, 290, 475, 303" fill="yellow" stroke="black" stroke-width="1.25" />
 <rect x="473" y="280" width="30" height="25" rx="10" ry="10" fill="white" stroke="black" stroke-width="1.25" />
 <rect x="275" y="100" width="200" height="350" fill="yellow" stroke="brown" />
