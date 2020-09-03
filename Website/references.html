@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Presidential Learning Algorithms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .nav-link-font {
+            color: #edede3;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header class="navbar navbar-expand-md navbar-dark bg-secondary flex-md-row bd-navbar">
+        <!- <nav class="navbar  navbar-fixed-top-affix-top">
+            <!---or sticky-top-->
+            <!-- fixed-top-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/brand/esponja.svg" title="Bob Esponja" width="40px" height="40px">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <!--<li>
+                    <h2>Machine Learning: Presidential Candidates</h2>
+                </li>-->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="This won't help you."
+                        aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <!--</nav>-->
+    </header>
+
+    <!-- MAIN CONTENT SECTION -->
+    <div class="container-fluid" role="main">
+        <div class="row">
+
+
+            <main id="border" role="main" class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar sidebar-sticky">
+
+                        <ul class="nav flex-column">
+                            <li class="nav item">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">Analysis</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                    <a class="dropdown-item" href="analysis.html">Model &
+                                        Analysis</a>
+                                    <a class="dropdown-item" href="conclusions.html">Conclusions &
+                                        Limitations</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="references.html">References<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <div class="col-md-10">
+                        <div class="col-md-12">
+                            <h1 class="h2">Machine Learning with Presidential Candidates</h1>
+                            <p></p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card bg-light">
+                                    <h1 class="card-header text-dark"> References</h1>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <ul>
+                                                    <li>
+                                                        <a
+                                                            href="
+            https://public.tableau.com/profile/aranzazu.ballesteros#!/vizhome/Sentiment_Analysis_15984990668960/Project3?publish=yes">tableau</a>
+                                                    </li>
+                                                    <li><a href="https://textblob.readthedocs.io/en/dev/">TextBlob:
+                                                            Natural Language Processing</a></li>
+                                                    <li><a href="https://projects.fivethirtyeight.com/polls/">FiveThirtyEight
+                                                            Polling Data</a></li>
+                                                    <li>
+                                                        <a
+                                                            href="https://github.com/noahberhe/Lobbyists4America/blob/master/Lobbyists4America.ipynb">word
+                                                            cloud</a></li>
+                                                    <li>
+                                                        <a
+                                                            href="https://time.com/5579161/presidents-elected-electoral-college/">times
+                                                            president won electoral but not popular vote</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.washingtonpost.com/technology/2020/06/29/reddit-closes-long-running-forum-supporting-president-trump-after-years-policy-violations/">reddit
+                                                            closes long-running forum</a></li>
+                                                    <li>https://www.pewresearch.org/methods/2019/11/19/a-field-guide-to-polling-election-2020-edition/
+                                                    </li>
+                                                    <li>PySpark: Python Library for Apache Spark</li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </main><!-- /.container -->
+
+        </div>
+    </div>
+
+    <footer class="footer mt-auto bg-primary text-center">
+        <div class="container">
+            <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven Women,
+                2020</span>
+        </div>
+    </footer>
+
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="assets/js/all.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>

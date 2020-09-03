@@ -9,14 +9,13 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Presidential Learning Algorithms</title>
     <!-- Bootstrap CSS -->
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+    <!--<link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">-->
 
     <!-- Bootstrap core CSS 
     <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
 
     <!-- Bootstrap Customized CSS-->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-
 
     <style>
         .bd-placeholder-img {
@@ -39,241 +38,265 @@
         }
     </style>
 
-
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <!--FontAwesome-->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <!-- Leaflet CSS 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />-->
-
-    <!-- Leaflet Icons 
-    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
--->
 
     <!-- Our CSS -->
     <!-- Custom styles for this template -->
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
+    <header class="navbar navbar-expand-md navbar-dark bg-secondary flex-md-row bd-navbar">
+        <!- <nav class="navbar  navbar-fixed-top-affix-top">
+            <!---or sticky-top-->
+            <!-- fixed-top-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/brand/esponja.svg" title="Bob Esponja" width="40px" height="40px">
+            </a>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary navbar-fixed-top-affix-top">
-        <!---or sticky-top-->
-        <!-- fixed-top-->
-        <a class="navbar-brand" href="#"><iframe type="text/html" src="assets/brand/esponja.html"></iframe>
-            <!--<img src="" height="30px"></a>
-            
-            "assets/brand/esponja.svg"
-            -->
-            <img scr="assets/brand/esponja.svg" height="30px" width="30px"></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html"></a>
-                </li>
-
-                <!--<li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <div class="nav-fill nav-item nav-text"><span class="text-light h5">Machine
+                        Learning with Presidential
+                        Candidates</span>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                    <!--<li>
+                    <h2>Machine Learning: Presidential Candidates</h2>
                 </li>-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Analysis</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="visualizations/temperature.html">Model & Analysis</a>
-                        <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
-                            Limitations</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">References</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="This won't help you." aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="This won't help you."
+                        aria-label="Search">
+                    <a class="btn btn-primary my-2 my-sm-0" href="esponja.html" role="button">Search</a>
+                    <!--<button id="esponja" class="btn btn-primary my-2 my-sm-0" type="text">Search</button>-->
+                </form>
+                <nav class="col-md-2 d-sm-block d-md-none bg-dark sidebar sidebar-sticky ">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i><span
+                            class="sr-only">(current)</span></a>
+                    <span class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown01"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-chart-bar"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="analysis.html">
+                                Analysis</a>
+                            <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+                        </div>
+                    </span>
+                    <span class="nav-item custom-select-md">
+                        <a class="nav-link" href="references.html"><i class="fas fa-book"></i></a>
+                    </span>
+                </nav>
+            </div>
 
+            <!--</nav>-->
+    </header>
 
     <!-- MAIN CONTENT SECTION -->
-    <div class="card bg-success">
-        <h1 class="card-header">Machine Learning with Presidential Candidates</h1>
-    </div>
-    <main id="border" role="main" class="container-fluid">
-        <div class="row" style="min-height:300px;">
-            <div class="col-md-3">
-                <div class="card bg-primary mb-12" style="min-height:200px">
-                    <div class="card-header"></div>
-                    <div class="card-body">We could use a sidebar for our
-                        links instead of a top navbar, if we want.
-                        this is a placeholder for that.
-                        <ul class="navbar-nav">
-                            <!--<ul class="navbar-nav mr-auto">-->
-                            <li class="nav-item active">
-                                <a class="nav-link" id="nav-link-font" href="index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
+    <div class="container-fluid" role="main">
+        <div class="row">
 
-                                <!--<li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>-->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Analysis</a>
-                                <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="visualizations/temperature.html">Model &
+
+            <main id="border" role="main" class="container-fluid">
+                <div class="row">
+
+
+                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar sidebar-sticky collapse navbar-collapse">
+                        <div class="wrapper">
+                            <ul class="nav flex-column">
+                                <li class="nav-item custom-select-md"><a class="nav-link" href="index.html"><i
+                                            class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown custom-select-md"><a class="nav-link dropdown-toggle"
+                                        href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="fas fa-chart-bar"></i>
                                         Analysis</a>
-                                    <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
-                                        Limitations</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                        <a class="dropdown-item" href="analysis.html">Model &
+                                            Analysis</a>
+                                        <a class="dropdown-item" href="conclusions.html">Conclusions &
+                                            Limitations</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item custom-select-md">
+                                    <a class="nav-link" href="references.html"><i class="fas fa-book"></i> Sources</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="col-md-10">
+
+                        <div class="col-md-12"">
+                            <div class=" card bg-light mb-10" style="min-height:200px">
+                            <h2 class="card-header text-dark h3">About the Project</h2>
+
+                            <div class="card-body text-dark">
+                                <p>With elections around the corner, we wondered how machine learning could help us
+                                    understand the voting populace. Election predictions are typically determined by
+                                    polling data, but they often do not really capture the nuances of how people feel.
+                                    Given the difficulty and complexity of predicting
+                                    election results, we decided to explore social media comments about presidential
+                                    candidates in order to find additional insights into voters decision-making.</p>
+                                <p>We used a pre-trained natural language processing (NLP) model to predict the
+                                    sentiment of individual reddit comments that included the keywords "Joe Biden" or
+                                    "Donald Trump".</p>
+                                <p>This process assigned the goodness level of individual words in a reddit comment on a
+                                    score from -1 to 1 (negative sentiment to positive) and calculated the average
+                                    sentiment for each user's comment.</p>
+                                <p>Sentiment analyses are used to understand the general feelings that people have about
+                                    a certain topic or brand in order to drive changes processes to increase.</p>
+                                <p>Our work can be used to understand how people feel about the presidential candidates
+                                    in order to:
+                                <ul>
+                                    <li>Change campaign tactics to shift people who are on the fence</li>
+                                    <li>Find common ground and identify what's important to voters</li>
+                                    <li>Filling in information gaps left behind by polling </li>
+                                </ul>
+
+                                </p>
+
+                                <p><i class="fas fa-cat"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <h1 class="h3">Project Contributors</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-warning">
+                                <h3 class="card-header h5">Aranza Ballesteros <a class="link"
+                                        href="https://www.linkedin.com/in/aaranzazuu/"><i
+                                            class="fab fa-linkedin"></i></a></h3>
+                                <div class="card-body">
+
+                                    <img src="assets/brand/aranzazu.png" class="pull-left mr-4"
+                                        title="Image of Project Contributor Aranza Ballesteros" width="30%"
+                                        align='left'>
+
+                                    <p>Aranza, short for Aranzazu, is a project manager who focuses on operational
+                                        effectiveness and efficiency. She believes that understanding our current
+                                        landscape though clear data is the first step towards making meaningful changes
+                                        in our processes and systems.</p>
+                                    <p>
+                                        Her interest in data arose during her time as a journalist from her admiration
+                                        of data activists' work to drive government accountability. Now, she uses her
+                                        love for storytelling to tell data stories about people, from diversity in the
+                                        workplace to the spread of misinformation in social media.</p>
+                                    <p>Aranza deployed this project's sentiment analysis and served
+                                        as the Tableau consultant. </p>
+
+
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="comparisons.html">References</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9" id="summary-box">
-
-                <!--<div class="row"></div>-->
-                <div class="col-md-12">
-                    <div class="card bg-dark mb-12">
-                        <h2 class="card-header">About the Project</h2>
-                        <div class="card-body">
-                            <p>
-                                This project is super cool. We did stuff and it turns out that machine learning
-                                takes a
-                                lot of knowledge about what a computer can process or handle in memory. We have
-                                more
-                                neurons that computers have nodes in a neural network, but my working memory
-                                isn't
-                                so
-                                great either!</p>
-                            <p>We used a variety of sources to tackle our main question</p>
-                            <p><i class="fas fa-cat"></i></p>
-
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header">Project Contributors</h1>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/brand/aranza.png"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Wind Speed vs Latitude" width="50%" align="right">
-                            </div>
-                            <div class="col-md-8">
-                                <p>Aranza brings a striking organization to the project. She brings a
-                                    background in data journalism to bear upon trying to answer some tough
-                                    questions.
-                                </p>
-                            </div>
+                        <div class="col-md-6">
+                            <div class="card bg-secondary">
+                                <h3 class="card-header h5">Sara Rosario <a
+                                        href="https://www.linkedin.com/in/sara-rosario-bb680680" class="link"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </h3>
+                                <div class="card-body">
+                                    <img src="assets/brand/sara.jpg" class="pull-left mr-4"
+                                        title="Image of Project Contributor Sara Rosario" width="30%" align='left'>
 
-                            <div class="col-md-4">
-                                <img src="assets/brand/helen.jpeg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Humidity vs Latitude" width="50%">
-                            </div>
-                            <div class="col-md-8">
-                                <p>Helen focuses on reaching beyond to showcase skills.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/brand/sara.jpg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Cloudiness vs Latitude" width="50%" align="right">
-                            </div>
-                            <div class="col-md-8">
-                                <p>With a background in Chemistry, Sara's interests in machine learning
-                                    and big data strive towards having better data-informed insights into
-                                    humanity.
-                                </p>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="https://www.linkedin.com/in/lnicholson-mesm/"><img src="assets/brand/laura.jpg"
-                                        alt="this is an image showing an example plot from the analysis"
-                                        title="Temperature vs Latitude" width="50%"></a>
-                            </div>
-                            <div class="col-md-8">
-                                <p>Laura is lost without a problem to solve. Her focus is on getting data
-                                    <em>right</em> and using it effectively to understand the world and to tell
-                                    stories.
-                                </p>
+                                    <p>With a background in chemistry and a passion for liquid chromatography mass
+                                        spectrometry and proteomics, Sara manages a research laboratory focused on
+                                        cardiovascular disease prevention.</p>
+                                    <p>Sara developed a solid understanding of statics and strong data visualization
+                                        skills through her work in research. Her deep desire to understand large
+                                        datasets brought her to develop her machine learning and big data skills with
+                                        the goals of having better data-informed insights into chemistry, disease and
+                                        humanity.
+                                    </p>
+                                    <p>Sara served as the lead researcher and machine learning model subject
+                                        matter expert for this project.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header">About the model and Analysis</h1>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4 bg-success">
-
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card bg-info">
+                                <h3 class="card-header h5">Helen Nunez <a href="https://www.linkedin.com/in/helen-nunez"
+                                        class="link"><i class="fab fa-linkedin"></i></a>
+                                </h3>
+                                <div class="card-body">
+                                    <img src="assets/brand/helen.png" class="pull-left mr-4"
+                                        alt="Image of Project Contributor Helen Nunez"
+                                        title="Image of Project Contributor Helen Nunez" width="30%" align='left'>
+                                    <p>Helen is an Engineering Program Manager and a problem-solver at heart.
+                                        She likes to
+                                        makes decisions based on data and objectivity. While managing
+                                        simultaneous
+                                        projects from multiple stakeholders, it's critical for her to be able to
+                                        visualize the data for fast and accurate decision making. She has
+                                        acquired the programming and data analytics skills to be more effective
+                                        with the data captured in her projects.
+                                        Next, she is interested in learning how Machine Learning can help her
+                                        predict
+                                        and add more value to projects in her role. </p>
+                                    <p>For this project, Helen served as the polling data researcher and lead
+                                        Tableau
+                                        designer.</p>
+                                </div>
                             </div>
-                            <div class="col-md-8 bg-warning">
-                                <p>This will go on a separate page, but not until we have the base format set.
-                                </p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-success">
+                                <h3 class="card-header h5">Laura Nicholson <a class="link"
+                                        href="https://www.linkedin.com/in/lnicholson-mesm/" style="color:light"><i
+                                            class="fab fa-linkedin"></i></a></h3>
+                                <div class="card-body">
+
+                                    <a href="https://www.linkedin.com/in/lnicholson-mesm/"><img
+                                            src="assets/brand/laura.jpg" alt="photo of project member Laura Nicholson"
+                                            class="pull-left mr-4" title="Image of Project Contributor Laura Nicholson"
+                                            width="30%" align='left'></a>
+                                    <p>Laura is lost without a problem to solve. Her focus is on getting
+                                        data
+                                        <em>right</em> and using it effectively to understand the world
+                                        and
+                                        to
+                                        tell
+                                        stories. She brings to the team a master's of environmental science and
+                                        engineering, a bachelor of arts in interdisciplinary science, and years
+                                        working
+                                        in renewable energy, energy efficiency, and new technologies for a
+                                        smarter
+                                        electric grid. She connects with this project at the level of trying to
+                                        understand language, big data, and modeled propensities, to name a few.
+                                    </p>
+                                    <p>Laura served as the lead website designer and lead debugger for this
+                                        project and
+                                        supported with model-training efforts. </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header"> Limitations & Conclusions</h1>
-                    <div class="card-body">
-                        <div class="row">
-
-                            <div class="col-md-8 bg-info">
-                                <p>This will go on a separate page, but not until we have the base format set.
-                                </p>
-                            </div>
-
-                            <div class="col-md-4 bg-dark">
-                                <img src="assets/brand/helen.jpeg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Humidity vs Latitude" width="50%">
-                            </div>
-
-                        </div>
+                    <div class="col-md-10">
+                        <p></p>
                     </div>
                 </div>
-            </div>
-        </div>
 
-    </main><!-- /.container -->
+
+
+        </div>
+        </main><!-- /.container -->
+    </div>
+    </div>
     <footer class="footer mt-auto bg-primary text-center">
         <div class="container">
             <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven Women, 2020</span>
@@ -292,7 +315,15 @@
 
     <!-- BOOTSTRAP JS-->
     <script src="assets/js/bootstrap.bundle.js"></script>
-
+    <script>// FIlter anything
+        $(document).ready(function () {
+            $("#esponja").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#border *").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });</script>
 
 </body>
 

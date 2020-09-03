@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Presidential Learning Algorithms</title>
+    <!-- Bootstrap CSS -->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
+
+    <!-- Bootstrap core CSS 
+    <link href="assets/dist/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap Customized CSS-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .nav-link-font {
+            color: #edede3;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <!-- Leaflet CSS 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />-->
+
+    <!-- Leaflet Icons 
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/leaflet.extra-markers.min.css">
+-->
+
+    <!-- Our CSS -->
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+
+<body>
+    <header class="navbar navbar-expand-md navbar-dark bg-secondary flex-md-row bd-navbar">
+        <!- <nav class="navbar  navbar-fixed-top-affix-top">
+            <!---or sticky-top-->
+            <!-- fixed-top-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/brand/esponja.svg" title="Bob Esponja" width="40px" height="40px">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <div class="nav-fill nav-item nav-text"><span class="text-light h5">Machine
+                        Learning with Presidential
+                        Candidates</span>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                    <!--<li>
+                    <h2>Machine Learning: Presidential Candidates</h2>
+                </li>-->
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="This won't help you."
+                        aria-label="Search">
+                    <a class="btn btn-primary my-2 my-sm-0" href="esponja.html" role="button">Search</a>
+                    <!--<button id="esponja" class="btn btn-primary my-2 my-sm-0" type="text">Search</button>-->
+                </form>
+                <nav class="col-md-2 d-sm-block d-md-none bg-dark sidebar sidebar-sticky ">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i></a>
+                    <span class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown01"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-chart-bar"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="analysis.html">
+                                Analysis<span class="sr-only">(current)</span></a>
+                            <a class="dropdown-item" href="conclusions.html">Conclusions</a>
+                        </div>
+                    </span>
+                    <span class="nav-item custom-select-md">
+                        <a class="nav-link" href="references.html"><i class="fas fa-book"></i></a>
+                    </span>
+                </nav>
+            </div>
+
+            <!--</nav>-->
+    </header>
+
+
+
+
+    <!-- MAIN CONTENT SECTION -->
+    <div class="container-fluid" role="main">
+        <div class="row">
+
+
+            <main id="border" role="main" class="container-fluid">
+                <div class="row">
+
+
+                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar sidebar-sticky collapse navbar-collapse">
+                        <div class="wrapper">
+                            <ul class="nav flex-column">
+                                <li class="nav-item custom-select-md"><a class="nav-link" href="index.html"><i
+                                            class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown custom-select-md"><a class="nav-link dropdown-toggle"
+                                        href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false"><i class="fas fa-chart-bar"></i>
+                                        Analysis<span class="sr-only">(current)</span></a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                        <a class="dropdown-item" href="analysis.html">Model &
+                                            Analysis</a>
+                                        <a class="dropdown-item disabled" href="conclusions.html">Conclusions &
+                                            Limitations</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item custom-select-md">
+                                    <a class="nav-link" href="references.html"><i class="fas fa-book"></i> Sources</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="card bg-primary mb-12" style="min-height:200px">
+                                    <h2 class="card-header h3">Bot Posts</h2>
+                                    <div class="card-body">
+                                        <p>"Biden has
+                                            an awful climate plan takes money from fossil fuels supports fracking
+                                            maybe
+                                            will
+                                            do some stuff for year
+                                            2050](https://www.newsweek.com/joe-biden-second-worst-climate-change-greenpeace-1439346)"
+                                        </p>
+                                        <p> "[Speaking of corruption, check out
+                                            this
+                                            article on Harris
+                                            lol](https://www.humorousmathematics.com/post/kamala-harris-corrupt-former-prosecutor-selected-as-joe-biden-s-2020-running-mate)"
+                                            appeared 34 times in one day.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card  col-md-7 bg-dark">
+                                <h2 class="card-header h3"> Limitations</h2>
+                                <div class="card-body">
+
+                                    <p>Due to time limitations and computer resources, we needed to
+                                        use
+                                        a pre-trained natural language processing model.</p>
+                                    <p>Bias
+                                    <ul>
+                                        <li>Reddit bots may have skewed our data. When reviewing
+                                            neutral-rated comments for Trump, we found that bots
+                                            would
+                                            post the same comment multiple times a day</li>
+                                        <li>The demographics of reddit users do not represent the
+                                            demographics of the U.S. poplation. Reddit users are:
+                                            50%
+                                            Americans, 64%
+                                            18-24 years-old, 70% non-Hispanic white people</li>
+                                        <li>Sentiment analysis is a machine learning algorithm, and
+                                            it
+                                            doesn't do well with some types of language, such as
+                                            sarcasm
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="card col-md-12 bg-info">
+                                <h2 class="card-header h3"> Conclusions</h2>
+                                <div class="card-body">
+                                    <p>Our Reddit comments did not show any strong favor for either
+                                        candidate, which ran counter to our predictions. Reddit
+                                        comments
+                                        were on average
+                                        middling, with most recent data giving trump and biden 0.08
+                                        and
+                                        0.06 sentiment scores respectively. Separated out by
+                                        positive
+                                        and negative sentiment, both candidate's positive sentiment
+                                        hovered around 0.15 and their negative sentiments hovered
+                                        around
+                                        -0.2.</p>
+                                    <p>In polling, the current president hovered around 50%
+                                        disapproval
+                                        and 30% approval. This high disapproval rating is reflected
+                                        in
+                                        our wordcloud to some extent with words associated with
+                                        negative
+                                        behavior, such as "condone", "hostilities", and
+                                        "reddiquette".
+                                    </p>
+                                    <p>Ultimately, this data may be a great tool for campaigning and
+                                        adjusting campaign advertising tactics to suit the targeted
+                                        populations.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto bg-primary text-center">
+        <div class="container">
+            <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven
+                Women, 2020</span>
+        </div>
+    </footer>
+
+
+    <!-------------------------JS FILES----------------------------------->
+
+    <!-- JQUERY-->
+    <script src="assets/js/all.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!--<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.slim.min.js"><\/script>')</script>-->
+
+    <!-- BOOTSTRAP JS-->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+
+
+</body>
+
+</html>
