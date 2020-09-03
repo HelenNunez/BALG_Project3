@@ -62,287 +62,123 @@
 </head>
 
 <body>
+    <header class="navbar navbar-expand-md navbar-dark bg-secondary flex-md-row bd-navbar">
+        <!- <nav class="navbar  navbar-fixed-top-affix-top">
+            <!---or sticky-top-->
+            <!-- fixed-top-->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/brand/esponja.svg" title="Bob Esponja" width="40px" height="40px">
+            </a>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-secondary navbar-fixed-top-affix-top">
-        <!---or sticky-top-->
-        <!-- fixed-top-->
-        <a class="navbar-brand" href="#"><iframe type="text/html" src="assets/brand/esponja.html"></iframe>
-            <!--<img src="" height="30px"></a>
-            
-            "assets/brand/esponja.svg"
-            -->
-            <img scr="assets/brand/esponja.svg" height="30px" width="30px"></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="data.html"></a>
-                </li>
-
-                <!--<li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <!--<li>
+                    <h2>Machine Learning: Presidential Candidates</h2>
                 </li>-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Analysis</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="visualizations/temperature.html">Model & Analysis</a>
-                        <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
-                            Limitations</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">References</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="This won't help you." aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="This won't help you."
+                        aria-label="Search">
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <!--</nav>-->
+    </header>
 
     <!-- MAIN CONTENT SECTION -->
-    <div class="card bg-success">
-        <h1 class="card-header">Machine Learning with Presidential Candidates</h1>
-    </div>
-    <main id="border" role="main" class="container-fluid">
-        <div class="row" style="min-height:300px;">
-            <div class="col-md-3">
-                <div class="card bg-primary mb-12" style="min-height:200px">
-                    <div class="card-header"></div>
-                    <div class="card-body">We could use a sidebar for our
-                        links instead of a top navbar, if we want.
-                        this is a placeholder for that.
-                        <ul class="navbar-nav">
-                            <!--<ul class="navbar-nav mr-auto">-->
-                            <li class="nav-item active">
-                                <a class="nav-link" id="nav-link-font" href="index.html">Home <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
+    <div class="container-fluid" role="main">
+        <div class="row">
 
-                                <!--<li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>-->
+
+            <main id="border" role="main" class="container-fluid">
+                <div class="row">
+                    <nav class="col-md-2 d-none d-md-block bg-dark sidebar sidebar-sticky">
+
+                        <ul class="nav flex-column">
+                            <li class="nav item">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">Analysis</a>
                                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                    <a class="dropdown-item" href="visualizations/temperature.html">Model &
+                                    <a class="dropdown-item" href="analysis.html">Model &
                                         Analysis</a>
-                                    <a class="dropdown-item" href="visualizations/clouds.html">Conclusions &
+                                    <a class="dropdown-item" href="conclusions.html">Conclusions &
                                         Limitations</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="comparisons.html">References</a>
+                                <a class="nav-link disabled" href="references.html">References<span
+                                        class="sr-only">(current)</span></a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-9" id="summary-box">
 
-                <!--<div class="row"></div>-->
-                <div class="col-md-12">
-                    <div class="card bg-dark mb-12">
-                        <h2 class="card-header">About the Project</h2>
-                        <div class="card-body">
-                            <p>
-                                This project is super cool. We did stuff and it turns out that machine learning
-                                takes a
-                                lot of knowledge about what a computer can process or handle in memory. We have
-                                more
-                                neurons that computers have nodes in a neural network, but my working memory
-                                isn't
-                                so
-                                great either!</p>
-                            <p>We used a variety of sources to tackle our main question</p>
-                            <p><i class="fas fa-cat"></i></p>
-
+                    </nav>
+                    <div class="col-md-10">
+                        <div class="col-md-12">
+                            <h1 class="h2">Machine Learning with Presidential Candidates</h1>
+                            <p></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header">Project Contributors</h1>
-                    <div class="card-body">
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="assets/brand/aranza.png"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Wind Speed vs Latitude" width="50%" align="right">
-                            </div>
-                            <div class="col-md-8">
-                                <p>Aranza brings a striking organization to the project. She brings a
-                                    background in data journalism to bear upon trying to answer some tough
-                                    questions.
-                                </p>
-                            </div>
+                            <div class="col-md-12">
+                                <div class="card bg-light">
+                                    <h1 class="card-header text-dark"> References</h1>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <ul>
+                                                    <li>
+                                                        <a
+                                                            href="
+            https://public.tableau.com/profile/aranzazu.ballesteros#!/vizhome/Sentiment_Analysis_15984990668960/Project3?publish=yes">tableau</a>
+                                                    </li>
+                                                    <li><a href="https://textblob.readthedocs.io/en/dev/">TextBlob:
+                                                            Natural Language Processing</a></li>
+                                                    <li><a href="https://projects.fivethirtyeight.com/polls/">FiveThirtyEight
+                                                            Polling Data</a></li>
+                                                    <li>
+                                                        <a
+                                                            href="https://github.com/noahberhe/Lobbyists4America/blob/master/Lobbyists4America.ipynb">word
+                                                            cloud</a></li>
+                                                    <li>
+                                                        <a
+                                                            href="https://time.com/5579161/presidents-elected-electoral-college/">times
+                                                            president won electoral but not popular vote</a>
+                                                    </li>
+                                                    <li><a
+                                                            href="https://www.washingtonpost.com/technology/2020/06/29/reddit-closes-long-running-forum-supporting-president-trump-after-years-policy-violations/">reddit
+                                                            closes long-running forum</a></li>
+                                                    <li>https://www.pewresearch.org/methods/2019/11/19/a-field-guide-to-polling-election-2020-edition/
+                                                    </li>
+                                                    <li>PySpark: Python Library for Apache Spark</li>
+                                                </ul>
+                                            </div>
 
-                            <div class="col-md-4">
-                                <img src="assets/brand/helen.jpeg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Humidity vs Latitude" width="50%">
-                            </div>
-                            <div class="col-md-8">
-                                <p>Helen is an Engineering Program Manager and a problem-solver at heart. She likes to
-                                    makes decisions based on data and objectivity. While managing simultaneous projects
-                                    from multiple stakeholders, it's critical for her to be able to visualize the data
-                                    for fast and accurate decision making. She has acquired the programming and data
-                                    analytics skills to be more effective with the data captured in her projects. Next,
-                                    she is interested in learning how Machine Learning can help her predict and add more
-                                    value to projects in her role.</p>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="assets/brand/sara.jpg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Cloudiness vs Latitude" width="50%" align="right">
-                            </div>
-                            <div class="col-md-8">
-                                <p>With a background in Chemistry, Sara's interests in machine learning
-                                    and big data strive towards having better data-informed insights into
-                                    humanity.
-                                </p>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="https://www.linkedin.com/in/lnicholson-mesm/"><img src="assets/brand/laura.jpg"
-                                        alt="this is an image showing an example plot from the analysis"
-                                        title="Temperature vs Latitude" width="50%"></a>
-                            </div>
-                            <div class="col-md-8">
-                                <p>Laura is lost without a problem to solve. Her focus is on getting data
-                                    <em>right</em> and using it effectively to understand the world and to tell
-                                    stories.
-                                </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+
+
                     </div>
                 </div>
-            </div>
+            </main><!-- /.container -->
+
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header">About the model and Analysis</h1>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-4 bg-success">
+    </div>
 
-                            </div>
-                            <div class="col-md-8 bg-warning">
-                                <p>This will go on a separate page, but not until we have the base format set.
-                                </p>
-                                <div class='tableauPlaceholder' id='viz1598577813464' style='position: relative'>
-                                    <noscript><a href='#'><img alt=' '
-                                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Sentiment_Analysis_15984990668960&#47;Project3&#47;1_rss.png'
-                                                style='border: none' /></a></noscript><object class='tableauViz'
-                                        style='display:none;'>
-                                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                        <param name='embed_code_version' value='3' />
-                                        <param name='site_root' value='' />
-                                        <param name='name' value='Sentiment_Analysis_15984990668960&#47;Project3' />
-                                        <param name='tabs' value='no' />
-                                        <param name='toolbar' value='yes' />
-                                        <param name='static_image'
-                                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Sentiment_Analysis_15984990668960&#47;Project3&#47;1.png' />
-                                        <param name='animate_transition' value='yes' />
-                                        <param name='display_static_image' value='yes' />
-                                        <param name='display_spinner' value='yes' />
-                                        <param name='display_overlay' value='yes' />
-                                        <param name='display_count' value='yes' />
-                                        <param name='language' value='en' /></object></div>
-                                <script
-                                    type='text/javascript'>                    var divElement = document.getElementById('viz1598577813464'); var vizElement = divElement.getElementsByTagName('object')[0]; vizElement.style.width = '100%'; vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px'; var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-                                <a
-                                    href="
-                                    https://public.tableau.com/profile/aranzazu.ballesteros#!/vizhome/Sentiment_Analysis_15984990668960/Project3?publish=yes"><iframe
-                                        src="https://public.tableau.com/views/Sentiment_Analysis_15984990668960/Project3?:language=en&:display_count=y&publish=yes&:origin=viz_share_link"></a></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-dark">
-                    <h1 class="card-header"> Limitations & Conclusions</h1>
-                    <div class="card-body">
-                        <div class="row">
-
-                            <div class="col-md-8 bg-info">
-                                <p>This will go on a separate page, but not until we have the base format set.
-                                </p>
-                            </div>
-
-                            <div class="col-md-4 bg-dark">
-                                <img src="assets/brand/helen.jpeg"
-                                    alt="this is an image showing an example plot from the analysis"
-                                    title="Humidity vs Latitude" width="50%">
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card bg-light">
-                    <h1 class="card-header"> References</h1>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <ul>
-                                    <li>
-                                        <a
-                                            href="
-        https://public.tableau.com/profile/aranzazu.ballesteros#!/vizhome/Sentiment_Analysis_15984990668960/Project3?publish=yes">tableau</a>
-                                    </li>
-                                    <li>
-                                        <a
-                                            href="https://github.com/noahberhe/Lobbyists4America/blob/master/Lobbyists4America.ipynb">word
-                                            cloud</a></li>
-                                    <li>
-                                        <a href="https://time.com/5579161/presidents-elected-electoral-college/">times
-                                            president won electoral but not popular vote</a>
-                                    </li>
-                                    <li><a
-                                            href="https://www.washingtonpost.com/technology/2020/06/29/reddit-closes-long-running-forum-supporting-president-trump-after-years-policy-violations/">reddit
-                                            closes long-running forum</a></li>
-                                    <li>https://www.pewresearch.org/methods/2019/11/19/a-field-guide-to-polling-election-2020-edition/
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main><!-- /.container -->
     <footer class="footer mt-auto bg-primary text-center">
         <div class="container">
-            <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven Women, 2020</span>
+            <span class="text-light"><i class="fas fa-cat"></i> © Pioneering Guild of Data-Driven Women,
+                2020</span>
         </div>
     </footer>
 
